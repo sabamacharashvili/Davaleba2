@@ -1,0 +1,14 @@
+import React from "react";
+import MatchCard from "./Matchcard";
+
+const MatchList = ({ matches }) => {
+  return (
+    <div className="match-list">
+      {matches.map((match) => (
+        <MatchCard key={match.id} match={match} />
+      ))}
+    </div>
+  );
+};
+
+export default MatchList;
